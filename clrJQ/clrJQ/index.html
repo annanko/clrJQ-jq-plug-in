@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>crlJQ mini-plugin</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="clrJQ.js"></script>
+	</head>
+	<style>
+		img{
+			width:50px;
+		}
+		.blockeft, .centerBlock, .blockright
+		{
+			border:solid 2px;
+		}
+	</style>
+	<body>
+			<div class="blockeft">
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+			</div>
+			<br />
+			<div class="centerBlock">
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+			</div>
+			<br /><div class="blockright">
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+				<h3>Who am I</h3>
+			</div>
+			<br />
+				<img src="http://www.simpsoncrazy.com/content/pictures/bart/BartSimpson3.gif" alt="img" class="bartleft" /> <br />
+				<img src="http://www.simpsoncrazy.com/content/pictures/bart/BartSimpson3.gif" alt="img" class="bartcenter" /><br />
+				<img src="http://www.simpsoncrazy.com/content/pictures/bart/BartSimpson3.gif" alt="img" class="bartright" /><br />
+			<script>
+				$( document ).ready(function() {
+					console.log( "ready!" );
+					
+					/***************Blocks*************/
+					$(".blockeft").leftBlock(50).rightText(); 
+					$(".centerBlock").centerBlock(120).centerText().find("h3:first-child").leftText();
+					$(".blockright").rightBlock(100,120);
+					
+					/**********************images*****************/	
+						$(".bartleft").leftImg(120,90);
+						$(".bartcenter").centerImg();
+						$(".bartright").rightImg(30,50);
+					
+				});
+			</script>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" type="text/css" href="jq_css/style.css">
+      <title>Example whit plagin</title>
+  </head>
+  <body>
+        <header class="name1">
+            <h3>About me</h3>
+            <p>Word, Education, Life</p>
+            <p>Want to know me?Contact me.</p>
+        </header>
+        <nav>
+            <div>
+                <img src="https://scontent-vie1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/10363381_1444975622482693_4111323164336261264_n.jpg?oh=abfde2c3b9721a6dc3dbd0ce1226e58c&oe=561376A0" alt="me"  class="me"/>
+                <h1 class="name" id="nav">
+                Andrej Nankov <i>Macedonija,Skopje</i></h1>
+                <p class="name">Web Developer & Desiner</p>
+                <h4 class="name">Skils:  </h4>
+                <div class="links">
+                  <a href="#" class="button-link">HTML</a>
+                  <a href="#" class="button-link">CSS</a>
+                  <a href="#" class="button-link">PHP</a>
+                  <a href="#" class="button-link">ASP.NET & MySQL</a>
+                  <a href="#" class="button-link">WordPress</a>
+                  <a href="#" class="button-link">Bootstrap</a>
+                  <a href="#" class="button-link">JavaScript & Jquery(API)</a>
+                  <a href="#" class="button-link">Java</a>
+                </div>
+                <br />
+                <p class="moto">
+                  My objective is to become a famous Web Developer & Desiner.
+                </p>
+            </div>
+        </nav>
+        <div id="content">
+          <div class="c1">  
+            <h3>Bio</h3>
+              <p>I am a professional graphic desiner and web desiner whit several years of experience.I am also an PhotoShop creator and author of this design page. I white jquery plagins and bild custom websites. I do what i love, and i love what i do! 
+              </p>
+              <p>You can:
+              Folow me on Github,
+              Join me on Facebook, &
+              Add me to your Network on LinkedIn 
+              </p>
+          </div>
+          <div class="c2">  
+            <h3>Hire Me</h3>
+            <p>I build responsive websites,and enjoy web design & development. I am always looking for a new projects.
+              I am dependable and my pricing is reasonable. I love pushing the limits to see what i can do next. 
+            </p>
+            <p>
+              Don't hesitate to get in touch whit me. I'd love to hear from you!
+            </p>
+          </div>
+          <button>Get in touch now.</button>
+        </div>
+        <!--script-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="jq_css/clrJQ.js"></script>
+        <script>
+            $(function(){
+               
+                    $("header").centerText().centerBlock("100%",200);
+                    $("h3").centerText();
+                    $("nav").leftBlock("60%");
+                    $("#content").rightBlock("40%");
+                    $("#links").centerBlock("100%","120%");
+                    $(".moto").centerBlock("100%",70).centerText();
+                    $(".name, #nav, h4").centerText();
+                    $(".me").centerImg(130,160);
+                    $("button").centerBlock(100);
+                    if($("body").width() < 911)
+                    {
+                        $("nav").centerBlock("100%");
+                        $("#content").centerBlock("100%");
+                        $(".links").addClass("button-link1");
+                    } 
+                    if($("body").width() < 633)
+                    {
+                       $(".name1 h3, .name1 p").hide();
+                       $("ime").centerImg();
+                       $(".moto").centerBlock("100%","100%")
+                    }
+            });
+        </script>
+    </body>
+</html>
