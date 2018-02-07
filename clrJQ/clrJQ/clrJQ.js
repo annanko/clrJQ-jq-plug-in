@@ -3,7 +3,7 @@
 * lrJQ is JQuery mini-plugin that set positions to text,images and blocks.
 *
 * Name:			clrJQ.js
-* Author:		Andrej Nankov - http://andrej.uk.to/
+* Author:		Andrej Nankov 
 * Date:			july 23, 2015		
 * Version:		1.0
 * Example:		/
